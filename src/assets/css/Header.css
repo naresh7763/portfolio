@@ -1,0 +1,136 @@
+/* GREY BACKGROUND */
+.grey-bg {
+    background-color: #f5f5f5;
+  }
+  
+  /* Header Base */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  padding: 10px 16px; /* Padding all around */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+  
+  
+  /* Logo */
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .logo .primary {
+    color: #1e293b;
+  }
+  
+  .logo .accent {
+    color: #007bff;
+  }
+  
+  /* Navigation Links - Desktop */
+  .nav-links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+   
+  }
+  @media screen and (min-width: 769px) {
+    .nav-links {
+      margin-right: 40px;
+    }
+  }
+  .nav-links a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #007bff;
+  }
+  
+  /* Hamburger Button */
+  .menu-btn {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .line {
+    width: 22px;
+    height: 2px;
+    background: #333;
+    margin: 4px 0;
+    transition: 0.3s ease;
+  }
+  
+  /* Hamburger Animation */
+  .line1 {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  
+  /* Mobile Style */
+  @media screen and (max-width: 768px) {
+    .menu-btn {
+      display: flex;
+    }
+  
+    .header {
+      padding: 8px 0;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: #f5f5f5;
+      padding: 12px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links a {
+      padding: 10px 0;
+      font-size: 16px;
+    }
+  
+    .line {
+      width: 20px;
+      height: 2px;
+      margin: 3px 0;
+    }
+  
+    .container {
+      padding: 0 0.75rem;
+    }
+  }
+  

@@ -1,0 +1,75 @@
+.home-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .name-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    max-width: 90%;
+    word-wrap: break-word;
+  }
+  
+  .skills-scroll {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .skills-track {
+    display: inline-block;
+    animation: scrollSkills 12s linear infinite;
+  }
+  
+  .skills-track span {
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  /* Animation */
+  @keyframes scrollSkills {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* 🔻 Mobile Responsive */
+  @media screen and (max-width: 768px) {
+    .name-title {
+      font-size: 2rem;
+    }
+  
+    .skills-track span {
+      font-size: 1rem;
+      margin: 0 15px;
+    }
+  }
+  

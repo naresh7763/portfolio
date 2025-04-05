@@ -1,0 +1,101 @@
+.about-section {
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  
+  .about-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+  }
+  
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .about-card {
+    flex: 1 1 300px;
+    max-width: 100%;
+    background-color: #1f2937;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    min-height: 250px;
+  }
+  
+  .about-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  .card-subtitle {
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: #cbd5e1;
+  }
+  
+  .card-description {
+    font-size: 0.95rem;
+    color: #e5e7eb;
+  }
+  
+  /* Border Colors */
+  .about-card.green {
+    border-color: #22c55e;
+  }
+  .about-card.indigo {
+    border-color: #6366f1;
+  }
+  .about-card.yellow {
+    border-color: #eab308;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-heading {
+      font-size: 2rem;
+    }
+  
+    .about-card {
+      flex: 1 1 100%;
+    }
+  
+    .card-row {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  
